@@ -1,24 +1,49 @@
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>SLVHS Robotics Site</title>
-</head>
+    <head>
+<script src = "console.js"></script>
+<script>
+//virtualConsoleInit()
+</script>
+        <title>ROSE</title></head>
 <body>
-  <h2>External sites</h2>
-  <ul>
-    <li>
-      Reddit Sites
-      <ul>
-        <li>
-          <a href="">EV3 Fight Club</a>
-        </li>
-        <li>
-          <a href="">chIDE Support Issues</a>
-        </li>
-      </ul>
-    </li>
-  </ul>
+    <h1>Return Of Samus Editor</h1>
+    <div id = "file manager" style = "position: absolute; top: 80px; left: 0; border: 1px solid #000000; width: 550px">
+        <h2>File:</h2>
+        FileName: <br><textarea id = "filename" rows = 1 cols = 10></textarea><br>Data
+<div id="divMain">
+</div>
+HEX Editor:<br>
+<textarea id = "output HEX" rows = 10 cols = 57></textarea>
+<script type="text/javascript" src = "hex.js">
+</script><br>
+    <input type = "button" id = "sorter" value = "decode" onclick = "button()">
+    <input type = "button" id = "encode" value = "encode" onclick = "encode()">
+        <input type = "button" id = "tedt" value = "test hack" onclick = "testhack()">
+    </div>
+    <div id = "map" style = "position: absolute; top: 80px; right: 251px; border: 1px solid #000000; width: 562px; height: 375px">
+        <canvas id = "Tiles" width = "500" height = "375"></canvas>
+    </div>
+    <div id = "basic" style = "position: absolute; top: 80px; right: 0px; border: 1px solid #000000; width: 250px; height: 550px">
+        <h1>Save:</h1> <br>
+            samus pos x: <textarea id = "x" rows = "1" cols = "2"></textarea> screen x:<textarea id = "sx" rows = "1" cols = "2"></textarea><br>
+            samus pos y: <textarea id = "y" rows = "1" cols = "2"></textarea> screen y:<textarea id = "sy" rows = "1" cols = "2"></textarea><br>
+            Items: <textarea id = "items" rows = "1" cols = "2"></textarea><br>
+            Beams: <textarea id = "beams" rows = "1" cols = "2"></textarea><br>
+            E-Tanks: <textarea id = "etanks" rows = "1" cols = "2"></textarea><br>
+            Current Health: <textarea id = "chealth" rows = "1" cols = "2"></textarea><br>
+            Current E-Tanks Full: <textarea id = "cetanks" rows = "1" cols = "2"></textarea><br>
+            Max Missiles: <textarea id = "missilec" rows = "1" cols = "4"></textarea><br>
+            Current Missiles: <textarea id = "missiles" rows = "1" cols = "4"></textarea><br>
+            Spike Damage: <textarea id = "spike" rows = "1" cols = "2"></textarea><br>
+            Lava Damage: <textarea id = "lava" rows = "1" cols = "2"></textarea><br>
+            Metroid Count(true): <textarea id = "tmetroid" rows = "1" cols = "2"></textarea><br>
+            Current Music: <textarea id = "music" rows = "1" cols = "2"></textarea><br>
+            In-game Time(min): <textarea id = "mtime" rows = "1" cols = "2"></textarea><br>
+            In-game Time(hours): <textarea id = "htime" rows = "1" cols = "2"></textarea><br>
+            Metroid Count(on-screen): <textarea id = "metroid" rows = "1" cols = "2"></textarea><br>
+    </div>
 </body>
+    <script src = "data.js">
+    </script>
 </html>
