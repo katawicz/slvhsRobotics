@@ -23,6 +23,7 @@ The next step is to create a folder for yourself to share code, documents, etc. 
 ```
 cd robogit
 mkdir <YourName>
+echo htllo > <YourName>/hello.txt
 ```
 
 Identify yourself
