@@ -6,7 +6,7 @@ Feel free to create your own branch. Use Pull Requests to update the main GitHub
 
 ## Get up and running with Git
 
-#Do not enter greater-than and less-than symbols, these indicate information that needs to be changed.
+#Do not enter the "curly-braces" ({}), these indicate information that needs to be changed.
 
 ### Create an account on http://github.com using your school email address.
 Be sure to reply to any verification emails you get from GitHub.
@@ -22,21 +22,22 @@ The next step is to create a folder for yourself to share code, documents, etc. 
 
 ```
 cd robogit
-mkdir <YourName>
+mkdir {YourName}
+echo hello > {YourName}/hello.txt
 ```
 
 Identify yourself
 
 ```
-git config --global user.name "<GitHub Username>"
-git config --global user.email <GitHub Registered Email>
+git config --global user.name "{GitHub Username}"
+git config --global user.email {GitHub Registered Email}
 ```
 
-Use the git commands to add and commit this folder
+Use the git commands to add and commit this folder (Don't forget to close the quotation)
 
 ```
 git add -A
-git commit -m "Adding a user folder for <YourName>"
+git commit -m "Adding a user folder for {YourName}"
 ```
 
 Be sure you have completed the assignment to supply your GitHub email and username before you can complete the git push command.
@@ -52,24 +53,24 @@ When you perform this push command, you will be required to supply your GitHub c
 Next, create a branch for yourself with the following commands:
 
 ```
-git branch <yourname>
-git checkout <yourname>
+git branch {yourname}
+git checkout {yourname}
 ```
 
-Create a file in the robogit/<yourname>/ folder. Use the Atom editor we installed before, or brave the waters with the vi editor. Add your name, a comment, anything really.
+Create a file in the robogit/{yourname}/ folder. Use the Atom editor we installed before, or brave the waters with the vi editor. Add your name, a comment, anything really.
 
 Again, do a commit pass:
 
 ```
 git add -A
-git commit -m "Adding a user branch for <yourname>"
+git commit -m "Adding a user branch for {yourname}"
 git status
 ```
 
 A normal git push won't work here, because the master repository doesn't know anything about the new branch. You will need to use this command to add the new branch:
 
 ```
-git push --set-upstream origin <yourname>
+git push --set-upstream origin {yourname}
 ```
 
 Your files and branch should now be visible on the GitHub page: https://github.com/mrhenderson/slvhsRobotics
