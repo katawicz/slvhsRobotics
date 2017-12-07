@@ -1,0 +1,27 @@
+#include <mindstorms.h>
+
+//functions
+void KILL (){
+    robot.holdJoints();
+    exit(0);
+}
+
+void move (double uval1,double uval2,int light){
+	if(light>7){
+        robot.setJointSpeeds(1600,1600,-1600,1600);      
+    }else if(light<7){
+        turnAmount=uval1-uval2;
+        
+        if(turnAmount<-20){
+            robot.setJointSpeeds(1600,100,-1600,1600); 
+        }
+        else if(turnAmount>20){
+            robot.setJointSpeeds(1600,-1600,100,1600); 
+        }
+        else{
+            robot.setJointSpeeds(1600,-1600,-1600,1600); 
+        }
+         
+    }
+}
+
